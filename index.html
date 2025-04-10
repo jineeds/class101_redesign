@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CLASS101 리디자인</title>
     <link rel="stylesheet" href="./css/main.css" / >
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js" defer></script>
+    <script src="./js/main.js" defer></script>
   </head>
-  <script src="./js/main.js"></script>
+
   <body>
     <header class="header">
       <div class="container">
@@ -22,12 +25,31 @@
     </header>
 
     <main>
-      <section class="hero" role="banner" aria-labelledby="hero-title">
-        <div class="hero__inner">
-          <h1 id="hero-title" class="hero__title">당신의 가능성을 여는 클래스</h1>
-          <p class="hero__desc">클래스101에서 나를 위한 배움을 시작하세요</p>
-          <a href="#category" class="btn hero__cta" role="button"> 클래스 둘러보기 </a>
+      <section class="hero">
+        <div class="hero__video-bg">
+          <iframe
+            src="https://www.youtube.com/embed/MPoPCwbR6dw?autoplay=1&mute=1&controls=0&loop=1&playlist=MPoPCwbR6dw&modestbranding=1&showinfo=0&cc_load_policy=0"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+            title="클래스101 브랜드 영상"
+          ></iframe>
         </div>
+
+        <div class="hero__overlay"></div>
+
+        <div class="hero__inner">
+          <h1 class="hero__title">삶을 디자인하다</h1>
+          <p class="hero__desc">나만의 배움으로 풍요로운 하루를 만들어보세요</p>
+        </div>
+
+        <div class="hero__scroll-down">⌄</div>
+      </section>
+
+      <section class="slogan-section">
+        <div class="slogan-line">배움은 나를 더 단단하게 만듭니다</div>
+        <div class="slogan-line">혼자보단, 함께 나누는 여정이 더 빛나죠</div>
+        <div class="slogan-line">지금, 클래스101에서 시작해보세요</div>
       </section>
 
       <div class="inner">
