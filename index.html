@@ -25,22 +25,152 @@
     <!-- ✅ 메인영역 -->
     <main>
       <!-- 히어로 배너 -->
-      <section class="hero">
-        <div class="hero-inner">
-          <h2>당신의 가능성을 여는 클래스</h2>
-          <p>배움은 언제나 지금, CLASS101에서 시작하세요.</p>
-          <a href="#" class="btn">클래스 둘러보기</a>
+      <section class="hero" role="banner" aria-labelledby="hero-title">
+        <div class="hero__inner">
+          <h1 id="hero-title" class="hero__title">당신의 가능성을 여는 클래스</h1>
+          <p class="hero__desc">클래스101에서 나를 위한 배움을 시작하세요</p>
+          <a href="#category" class="btn hero__cta" role="button"> 클래스 둘러보기 </a>
         </div>
       </section>
 
       <!-- 카테고리 블록 -->
-      <section class="categories">
-        <div class="container grid">
-          <a href="./category/design.html" class="category">
-            <img src="./assets/images/1920xauto (1).webp" alt="디자인 · 일러스트" />
-            <span>디자인 · 일러스트</span>
-          </a>
-          <!-- 반복 -->
+      <section class="category" id="category" aria-labelledby="category-title">
+        <div class="container">
+          <h2 id="category-title" class="category__title">원하는 분야부터 골라보세요</h2>
+
+          <ul class="category__list" role="list">
+            <li class="category-card">
+              <a href="category/design.html" class="category-card__link">
+                <img
+                  src="./assets/images/1920xauto (1).webp"
+                  alt="디자인 · 일러스트 썸네일"
+                  class="category-card__image"
+                />
+                <span class="category-card__label">디자인 · 일러스트</span>
+              </a>
+            </li>
+            <li class="category-card">
+              <a href="category/video.html" class="category-card__link">
+                <img src="./assets/images/1920xauto (1).webp" alt="영상 · 사진 썸네일" class="category-card__image" />
+                <span class="category-card__label">영상 · 사진</span>
+              </a>
+            </li>
+            <!-- 카테고리 항목 반복 -->
+          </ul>
+        </div>
+      </section>
+
+      <section class="best-class" aria-labelledby="best-class-title">
+        <div class="container">
+          <h2 id="best-class-title" class="best-class__title">🔥 지금 인기 있는 클래스</h2>
+
+          <div class="best-class__slider" role="region" aria-label="인기 클래스 슬라이드">
+            <ul class="class-slide-list" role="list">
+              <li class="class-card">
+                <a href="#" class="class-card__link">
+                  <img src="./assets/images/1920xauto.webp" alt="감성 드로잉 클래스 썸네일" class="class-card__thumb" />
+                  <div class="class-card__info">
+                    <strong class="class-card__title">감성 드로잉 클래스</strong>
+                    <span class="class-card__creator">by 홍길동</span>
+                  </div>
+                </a>
+              </li>
+              <!-- 반복 -->
+            </ul>
+
+            <!-- 👉 JS 슬라이드 버튼 -->
+            <button class="slider-btn prev" aria-label="이전 클래스 보기">‹</button>
+            <button class="slider-btn next" aria-label="다음 클래스 보기">›</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="new-class" aria-labelledby="new-class-title">
+        <div class="container">
+          <h2 id="new-class-title" class="new-class__title">🆕 새롭게 시작된 클래스</h2>
+
+          <ul class="new-class__grid" role="list">
+            <li class="class-card">
+              <a href="#" class="class-card__link">
+                <img
+                  src="./assets/images/1920xauto (1).webp"
+                  alt="홈카페 만들기 클래스 썸네일"
+                  class="class-card__thumb"
+                />
+                <div class="class-card__info">
+                  <strong class="class-card__title">홈카페 만들기</strong>
+                  <span class="class-card__creator">by 혜지트</span>
+                </div>
+              </a>
+            </li>
+            <!-- 반복 -->
+          </ul>
+        </div>
+      </section>
+
+      <section class="bubble-recommend" aria-labelledby="bubble-recommend-title">
+        <div class="container">
+          <h2 id="bubble-recommend-title" class="bubble-recommend__title">이런 클래스를 찾고 계신가요?</h2>
+          <p class="bubble-recommend__desc">취향에 따라 추천 클래스를 골라보세요 🎯</p>
+
+          <ul class="bubble-recommend__list" role="list">
+            <li class="bubble-item">
+              <a href="#" class="bubble-item__link" aria-label="사이드잡 추천">
+                <span class="bubble-item__icon">💼</span>
+                <span class="bubble-item__label">사이드잡</span>
+              </a>
+            </li>
+            <li class="bubble-item">
+              <a href="#" class="bubble-item__link" aria-label="디지털 노마드 추천">
+                <span class="bubble-item__icon">🌍</span>
+                <span class="bubble-item__label">디지털 노마드</span>
+              </a>
+            </li>
+            <li class="bubble-item">
+              <a href="#" class="bubble-item__link" aria-label="직장인 추천">
+                <span class="bubble-item__icon">🧑‍💻</span>
+                <span class="bubble-item__label">직장인 추천</span>
+              </a>
+            </li>
+            <!-- 반복 -->
+          </ul>
+        </div>
+      </section>
+      <section class="onboarding" aria-labelledby="onboarding-title">
+        <div class="container">
+          <h2 id="onboarding-title" class="onboarding__title">클래스101이 처음이신가요?</h2>
+          <p class="onboarding__desc">시작을 도와드릴게요. 아래 로드맵을 따라가며 쉽게 첫 클래스를 만나보세요!</p>
+
+          <ol class="onboarding__steps">
+            <li class="step-card">
+              <div class="step-card__number">STEP 1</div>
+              <div class="step-card__content">
+                <strong class="step-card__title">관심 있는 분야 고르기</strong>
+                <p class="step-card__desc">카테고리에서 나와 맞는 분야를 선택하세요.</p>
+              </div>
+            </li>
+            <li class="step-card">
+              <div class="step-card__number">STEP 2</div>
+              <div class="step-card__content">
+                <strong class="step-card__title">클래스 둘러보기</strong>
+                <p class="step-card__desc">썸네일과 소개를 보며 궁금한 클래스를 탐색해요.</p>
+              </div>
+            </li>
+            <li class="step-card">
+              <div class="step-card__number">STEP 3</div>
+              <div class="step-card__content">
+                <strong class="step-card__title">첫 클래스 시작하기</strong>
+                <p class="step-card__desc">원하는 클래스를 클릭하고 수강을 시작하세요!</p>
+              </div>
+            </li>
+            <li class="step-card">
+              <div class="step-card__number">STEP 4</div>
+              <div class="step-card__content">
+                <strong class="step-card__title">첫 클래스 시작하기</strong>
+                <p class="step-card__desc">원하는 클래스를 클릭하고 수강을 시작하세요!</p>
+              </div>
+            </li>
+          </ol>
         </div>
       </section>
 
@@ -52,9 +182,20 @@
     </main>
 
     <!-- ✅ 푸터 -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
       <div class="container">
-        <p>&copy; 2025 CLASS101 리디자인 포트폴리오 by 혜지트</p>
+        <div class="footer__top">
+          <h2 class="footer__logo">CLASS101</h2>
+          <ul class="footer__nav" role="list">
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">고객센터</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__bottom">
+          <small>&copy; 2025 CLASS101 Re:design by 혜지트. All rights reserved.</small>
+        </div>
       </div>
     </footer>
   </body>
