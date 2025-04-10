@@ -1,0 +1,19 @@
+// scss/main.scss
+
+// 1. Base
+@import 'base/reset';
+@import 'base/variables';
+@import 'base/typography';
+
+// 2. Layout
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/grid';
+
+// 3. Components
+@import 'components/button';
+@import 'components/card';
+
+// 4. Pages
+@import 'pages/home';
+@import 'pages/category';

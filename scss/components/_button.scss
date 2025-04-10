@@ -1,0 +1,28 @@
+.btn {
+  padding: 0.75rem 2rem;
+  border-radius: 999px;
+  font-weight: 600;
+  display: inline-block;
+  transition: all 0.3s ease;
+  text-align: center;
+
+  &.btn-outline {
+    border: 2px solid #111;
+    background: transparent;
+    color: #111;
+
+    &:hover {
+      background: #111;
+      color: #fff;
+    }
+  }
+
+  &:not(.btn-outline) {
+    background: #111;
+    color: #fff;
+
+    &:hover {
+      background: #333;
+    }
+  }
+}
