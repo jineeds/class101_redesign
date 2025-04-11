@@ -156,6 +156,18 @@
 .best-class {
   padding: 6rem 2rem;
   background-color: #fff;
+  .best-class__slider {
+    position: relative;
+
+    .swiper-slide {
+      width: auto;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      color: var(--color-primary);
+    }
+  }
 
   .best-class__title {
     font-size: 2rem;
@@ -251,6 +263,18 @@
 .new-class {
   padding: 6rem 2rem;
   background-color: #fafafa;
+  .new-class__slider {
+    position: relative;
+
+    .swiper-slide {
+      width: auto;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      color: var(--color-primary);
+    }
+  }
 
   .new-class__title {
     font-size: 2rem;

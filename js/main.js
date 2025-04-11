@@ -14,3 +14,45 @@ gsap.utils.toArray('.slogan-line').forEach((line, i) => {
     },
   });
 });
+//best section
+const bestClassSwiper = new Swiper('.best-class__slider', {
+  slidesPerView: 3,
+  spaceBetween: 24,
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    1024: {
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    320: {
+      slidesPerView: 1,
+    },
+  },
+});
+//new section
+const newClassSwiper = new Swiper('.new-class__slider', {
+  slidesPerView: 3,
+  spaceBetween: 24,
+  loop: true,
+  navigation: {
+    nextEl: '.new-class .swiper-button-next',
+    prevEl: '.new-class .swiper-button-prev',
+  },
+  breakpoints: {
+    1024: {
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    320: {
+      slidesPerView: 1,
+    },
+  },
+});
